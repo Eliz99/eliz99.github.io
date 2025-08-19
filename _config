@@ -1,0 +1,94 @@
+title: HanMeimei
+description: >- # this means to ignore newlines until "baseurl:"
+
+street_address: HanMeimei street
+city: 北京
+state: 北京
+zip_code: 100000
+country: 中国
+name: Hanmeimei
+email: 756199419@qq.com
+
+
+500px:
+  url:
+  label:
+medium:
+  url: 
+  label:
+snapchat:
+  url: 
+  label:
+twitter:
+  url: 
+  label:
+
+
+
+legal_terms:
+  url: /
+privacy_policy:
+  url: /
+  third_party:
+    hosting: github
+
+
+
+collections:
+  redirects:
+    output: true
+    permalink: /:path/
+
+# Default settings
+defaults:
+  -
+    scope:
+      type: "redirects"
+    values:
+      layout: "redirect"
+      lang: "x-default"
+  -
+    scope:
+      path: ""
+    values:
+      menu: default
+  -
+    scope:
+      path: "zh"
+    values:
+      lang: "zh"
+  -
+    scope:
+      path: "en"
+    values:
+      lang: "en"
+  -
+    scope:
+      path: "fr"
+    values:
+      lang: "fr"
+
+# Build settings
+permalink: pretty
+markdown: kramdown
+sass:
+  sourcemap: never
+  style: compressed
+plugins:
+  - jekyll-seo-tag
+  - jekyll-redirect-from
+    
+# Publication settings
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://wwwbaidu.cn" # the base hostname & protocol for your site.
+author: baidu
+copyright:
+  holder: baidu
+  license: Mit
+
+# Exclude from processing
+timezone: Asia/Shanghai
+ifuture: true
+
+ssl_certificate: /crt/loongnix.cn.crt
+ssl_certificate_key: /crt/loongnix.cn.key
